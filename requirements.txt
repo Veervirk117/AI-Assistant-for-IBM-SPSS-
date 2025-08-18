@@ -1,0 +1,10 @@
+langchain 
+langchain-ollama 
+langchain-chroma
+pypdf2
+python-docx
+tiktoken
+nltk
+pandas
+numpy
+
