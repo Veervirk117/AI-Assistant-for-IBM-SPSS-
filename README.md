@@ -1,24 +1,24 @@
-# 🤖 SPSS Statistical Analysis Assistant
+# SPSS Statistical Analysis Assistant
 
 A powerful RAG-powered bot that provides detailed explanations and step-by-step guidance for SPSS statistical analysis procedures.
 
-## 🎯 What This Bot Does
+## Bot Capabilities
 
-The SPSS Assistant transforms your food reviewing scaffold into a comprehensive **statistical analysis helper** that focuses on:
+This SPSS Assistant is a comprehensive statistical analysis helper that focuses on:
 
-### 1. **Explainability** ✅ (Built)
+### 1. **Explainability** (Done)
 - **Detailed Function Explanations**: Step-by-step instructions for every SPSS procedure
 - **Menu Navigation**: Exact menu paths and clicks
 - **Assumption Checking**: What to verify before running tests
 - **Result Interpretation**: How to read and understand SPSS output
 - **Common Pitfalls**: What users often get wrong and how to avoid it
 
-### 2. **Doability** 🚧 (Future Enhancement)
+### 2. **Doability** (Future Addition)
 - **Action Suggestions**: What to do next based on results
 - **Workflow Automation**: Automated execution of common procedures
 - **Smart Recommendations**: Context-aware suggestions for analysis
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 ┌─────────────────┐    ┌──────────────────┐    ┌─────────────────┐
@@ -27,49 +27,42 @@ The SPSS Assistant transforms your food reviewing scaffold into a comprehensive 
 └─────────────────┘    └──────────────────┘    └─────────────────┘
 ```
 
-## 📚 Knowledge Coverage
+## Knowledge Coverage
 
 The bot covers **8 major SPSS categories** with **24+ functions**:
 
-### 📊 **Descriptive Statistics**
+### **Descriptive Statistics**
 - Descriptive Statistics
 - Frequency Tables
 
-### 🔧 **Data Management**
+### **Data Management**
 - Data Import
 - Variable Recoding
 - Missing Data Analysis
 
-### 📈 **Inferential Statistics**
+### **Inferential Statistics**
 - Independent Samples T-Test
 - One-Way ANOVA
 - Correlation Analysis
 
-### 📉 **Regression Analysis**
+### **Regression Analysis**
 - Linear Regression
 - Multiple Regression
 
-### 🔍 **Factor Analysis**
+### **Factor Analysis**
 - Factor Analysis
 
-### 📋 **Nonparametric Tests**
+### **Nonparametric Tests**
 - Chi-Square Test
 - Mann-Whitney U Test
 
-### 📊 **Data Visualization**
+### **Data Visualization**
 - Histograms
 - Scatter Plots
 
-### 📤 **Output & Reporting**
+### **Output & Reporting**
 - Output Management
 - Syntax Editor
-
-## 🚀 Getting Started
-
-### Prerequisites
-- Python 3.8+
-- Ollama with `llama3.2` model
-- Ollama with `mxbai-embed-large` embeddings
 
 ### Installation
 
@@ -100,7 +93,7 @@ python spss_bot.py
 python demo_spss_bot.py
 ```
 
-## 💬 How to Use
+## How to Use
 
 ### **Basic Commands**
 - `help` - Show all available SPSS functions
@@ -131,7 +124,7 @@ python demo_spss_bot.py
 "What visualization tools are available?"
 ```
 
-## 🔍 RAG Features
+## RAG Features
 
 ### **Smart Retrieval**
 - **Semantic Search**: Finds relevant information even with different wording
@@ -143,7 +136,7 @@ python demo_spss_bot.py
 - **Workflow Planning**: Creates logical analysis sequences
 - **Difficulty Matching**: Adapts explanations to user expertise
 
-## 📁 File Structure
+## File Structure
 
 ```
 Newbot/
@@ -156,21 +149,13 @@ Newbot/
 └── README.md                # This file
 ```
 
-## 🧪 Testing
-
-Run the demo to verify everything works:
-
-```bash
-python demo_spss_bot.py
-```
-
 This will test:
 - Vector store initialization
 - Knowledge base loading
 - Query processing
 - Response generation
 
-## 🔧 Customization
+## Customization
 
 ### **Adding New SPSS Functions**
 Edit `spss_knowledge_base.py` and add new entries to `SPSS_KNOWLEDGE`:
@@ -191,7 +176,7 @@ Edit the prompt templates in `spss_bot.py` to change the bot's personality or re
 ### **Adjusting Search Parameters**
 Modify `search_kwargs` in `spss_vector_store.py` to adjust retrieval behavior.
 
-## 🚧 Future Enhancements
+## Future Plans
 
 ### **Phase 2: Doability Features**
 - **Action Execution**: Automatically perform SPSS procedures
@@ -204,7 +189,7 @@ Modify `search_kwargs` in `spss_vector_store.py` to adjust retrieval behavior.
 - **Integration**: Connect with actual SPSS software
 - **Learning**: Adapt to user preferences and common workflows
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### **Common Issues**
 
@@ -218,25 +203,6 @@ Modify `search_kwargs` in `spss_vector_store.py` to adjust retrieval behavior.
 3. **Vector store errors**:
    - Delete the `spss_knowledge_db` folder and restart
    - Check that all dependencies are installed
-
-### **Performance Tips**
-- Use SSD storage for vector database
-- Ensure sufficient RAM for Ollama models
-- Close other applications when running large analyses
-
-## 🤝 Contributing
-
-To contribute to the SPSS bot:
-
-1. **Fork the repository**
-2. **Add new SPSS functions** to the knowledge base
-3. **Improve prompts** for better responses
-4. **Test thoroughly** with the demo script
-5. **Submit a pull request**
-
-## 📄 License
-
-This project is open source. Feel free to use and modify for your statistical analysis needs.
 
 ## 🎓 Use Cases
 
@@ -256,5 +222,3 @@ This project is open source. Feel free to use and modify for your statistical an
 - Statistical interpretation
 
 ---
-
-**Ready to transform your SPSS experience? Start the bot with `python spss_bot.py` and ask your first question!** 🚀 
