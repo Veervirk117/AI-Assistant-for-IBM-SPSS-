@@ -1,7 +1,7 @@
 langchain 
 langchain-ollama 
 langchain-chroma
-pypdf2
+PyMuPDF
 python-docx
 tiktoken
 nltk
